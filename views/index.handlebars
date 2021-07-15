@@ -1,0 +1,25 @@
+   <div class="row">
+       <div class="mb-3">
+           Welcome Back, 
+           <strong id="user">{{user}}</strong>
+       </div>
+   </div>
+   <div class="col-4 mr-5">
+       <form class="mt-2" action="http://localhost:3000/api/notes/" method="POST"
+           enctype="application/x-www-form-urlencoded">
+           <textarea id="newNote" name="note" class="border-0" placeholder="Create Note"></textarea>
+           <input type="submit" value="Save" class="border-0 bg-transparent pt-2">
+       </form>
+   </div>
+   <div class="col-4 mr-20" id="savedNotes">
+       {{#each notes}}
+       <div class="note">
+           <span class="input"><textarea class="border-0"
+                   data-id="{{ @index }}"> {{ this }}</textarea></span>
+           <div class="d-flex justify-content-end w-100">
+               <span class="delete" data-id="{{ @index }}"><i class="fas fa-times"></i></span>
+           </div>
+           <hr>
+       </div>
+       {{/each}}
+   </div>

@@ -1,0 +1,45 @@
+body,
+input,
+button,
+select {
+  font-size: small;
+}
+
+input[type=text] {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#newNote {
+  width: 100%;
+  height: 30vh;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+#savedNotes {
+  margin-right: 30px;
+}
+
+#savedNotes textarea {
+  width: 100%;
+  height: 10vh;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+input[type=submit] {
+  transform: translate(-5px);
+}
+
+span {
+cursor: pointer;
+}
